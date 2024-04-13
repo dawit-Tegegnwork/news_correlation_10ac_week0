@@ -1,4 +1,4 @@
-##Task 2:  News Insights Dashboard
+# News Insights Dashboard
 
 ## Overview
 This task focuses on building a comprehensive dashboard to visualize the insights and findings from the news data analysis pipeline.
