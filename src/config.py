@@ -1,5 +1,6 @@
 from __future__ import print_function
 import argparse
+<<<<<<< HEAD
 import os
 
 default_path = os.path.join("data")
@@ -22,3 +23,15 @@ print(f'Path: {cfg.path}')
 print(f'News Data: {cfg.news}')
 print(f'Traffic Data: {cfg.traffic}')
 print(f'Domain Location Data: {cfg.domain}')
+=======
+
+parser = argparse.ArgumentParser(description='cmdArgs')
+parser.add_argument('--output', type=str, default='slack_data.csv',
+                help='filename to write analysis output in CSV format')
+parser.add_argument('--path', required=True, type=str, help='directory where slack data reside')
+parser.add_argument('--channel', type=str, default='', help='which channel we parsing')
+parser.add_argument('--userfile', type=str, default='users.json', help='users profile information')
+
+cfg = parser.parse_args()
+# print(cfg)
+>>>>>>> d7d2ed8c2e2caa5623e6ba005570615c4f6517fd
