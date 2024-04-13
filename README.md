@@ -1,53 +1,44 @@
-# Task 2: Data Science Components and Machine Learning
+# Task 3: Integrating with PostgreSQL
 
 ## Overview
-In this task, we focus on building various data science components and implementing machine learning techniques to extract deeper insights from the news dataset.
+In this task, we focus on integrating the news data analysis pipeline with a PostgreSQL database, leveraging it as a feature store and for model deployment.
 
 ## Objectives
-- Understand and implement MLOps components, including a feature store, model versioning, and model monitoring.
-- Design an end-to-end analysis pipeline using the CRISP-DM methodology.
-- Perform time-series analysis on the news data to identify trends and patterns.
-- Develop a machine learning model to classify news headlines into predefined categories.
-- Apply topic modeling and sentiment analysis to the news content.
-- Build predictive models to forecast relevant metrics, such as website rankings and traffic trends.
-- Conduct network analysis to unveil the relationships and connections within the news ecosystem.
+- Understand the differences between SQL and NoSQL databases and their use cases.
+- Design a database schema to store the features and metadata used in the machine learning models.
+- Load the preprocessed data and model features into the PostgreSQL database.
+- Utilize the database as a feature store for subsequent model training and deployment.
 
 ## Steps
 
-1. **Implement MLOps Components**:
-   - Set up a feature store to manage and version the data features used for modeling.
-   - Implement model versioning using a tool like MLflow to track and manage trained models.
-   - Integrate model monitoring to detect data drift and performance degradation over time.
+1. **Database Technologies Overview**:
+   - Explore the pros and cons of SQL and NoSQL databases, and their suitability for different use cases.
+   - Identify the specific requirements and characteristics of the news data analysis project that will guide the choice of database technology.
 
-2. **Design the Analysis Pipeline**:
-   - Follow the CRISP-DM methodology to design an end-to-end data analysis pipeline.
-   - Incorporate data ingestion, preprocessing, feature engineering, modeling, and deployment stages.
+2. **Database Schema Design**:
+   - Create a database schema using tools like dbdiagram.io or DbSchema to model the data structures required for the project.
+   - Design tables to store the news article metadata, content, features, and any other relevant information.
+   - Ensure the schema supports the needs of the data science components, such as the feature store and model deployment.
 
-3. **Perform Time-series Analysis**:
-   - Analyze the temporal trends and patterns in the news data, including topic and sentiment evolution over time.
-   - Identify seasonality, anomalies, and other time-dependent characteristics.
-   - Use time-series forecasting techniques to predict future news metrics.
+3. **Integrating with PostgreSQL**:
+   - Set up a PostgreSQL database instance, either locally or on a cloud platform.
+   - Develop Python scripts to connect to the database, create the necessary tables, and load the data from the news dataset.
+   - Implement data pipelines to continuously ingest new data and update the database.
 
-4. **Classify News Headlines**:
-   - Develop a machine learning model to categorize news headlines into predefined topics, such as politics, business, technology, and sports.
-   - Evaluate the model's performance and iterate on the feature engineering and model selection.
+4. **Utilizing the Feature Store**:
+   - Modify the existing data science components to use the PostgreSQL database as a feature store.
+   - Implement functions to read and write feature data to the database, ensuring versioning and tracking of feature engineering changes.
+   - Leverage the feature store for model training, evaluation, and deployment.
 
-5. **Apply Topic Modelling and Sentiment Analysis**:
-   - Use techniques like LDA and BERTopic to extract the main topics covered in the news articles.
-   - Analyze the sentiment distribution across news sources and topics, comparing the impact of using mean/median and examining the overall sentiment trends.
-
-6. **Build Predictive Models**:
-   - Develop regression and classification models to forecast metrics like website global ranking, traffic trends, and sentiment scores.
-   - Explore the relationships between news reporting, sentiment, and website performance.
-
-7. **Conduct Network Analysis**:
-   - Investigate the network of news sources, examining the connections, influence, and information flow within the ecosystem.
-   - Identify central and influential news outlets, as well as clusters of news sources covering similar topics.
+5. **Database-backed Model Deployment**:
+   - Design a workflow to deploy the trained machine learning models, storing the model artifacts and configurations in the PostgreSQL database.
+   - Implement code to load the stored models from the database and serve them for real-time predictions or batch processing.
+   - Ensure the database-backed deployment supports model versioning and easy model updates.
 
 ## Deliverables
-- Code implementations for the various data science components and machine learning models.
-- A comprehensive report detailing the methodology, findings, and insights from Task 2.
-- Visualizations and dashboards showcasing the analysis results.
+- Documentation on the database schema design and justification for the chosen database technology.
+- Python scripts and code modules for integrating the news data analysis pipeline with the PostgreSQL database.
+- Demonstration of the feature store and model deployment workflows, showcasing the integration with the database.
 
 ## Next Steps
-After completing Task 2, you will proceed to Task 3, which focuses on integrating the data pipeline with a PostgreSQL database.
+After completing Task 3, you will proceed to Task 4, which focuses on building a dashboard to visualize the insights and results from the news data analysis.
