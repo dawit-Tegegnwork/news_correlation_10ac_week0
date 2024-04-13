@@ -1,113 +1,60 @@
-# 10 Academy Intensive Training Week-0 Challenge
+task-4 
+# News Insights Dashboard
 
-# News Data Analysis Pipeline
+## Overview
+This task focuses on building a comprehensive dashboard to visualize the insights and findings from the news data analysis pipeline.
 
-This project aims to analyze a global news dataset by building a comprehensive data science pipeline, leveraging various techniques and technologies.
-
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Dataset Overview](#dataset-overview)
-3. [Project Structure](#project-structure)
-4. [Key Features](#key-features)
-   1. [MLOps Components](#mlops-components)
-   2. [Analysis Pipeline Design](#analysis-pipeline-design)
-   3. [Time Series Analysis](#time-series-analysis)
-   4. [News Headline Classification](#news-headline-classification)
-   5. [Topic Modelling and Sentiment Analysis](#topic-modelling-and-sentiment-analysis)
-   6. [Predictive Analysis and Modelling](#predictive-analysis-and-modelling)
-   7. [Network Analysis](#network-analysis)
-5. [Installation and Usage](#installation-and-usage)
-6. [Contributing](#contributing)
-7. [References](#references)
-
-## Introduction
-
-The News Data Analysis Pipeline is a comprehensive project that aims to extract valuable insights from a global news dataset. By leveraging a wide range of data science techniques, including MLOps, time-series analysis, machine learning, and network analysis, the project provides a robust framework for understanding the dynamics and trends within the news ecosystem.
-
-## Dataset Overview
-
-The dataset used in this project consists of news articles collected from various global media sources using the NewsAPI. The dataset includes information such as article metadata, content, sentiment, and source details. Additionally, the project utilizes complementary datasets, including domain location data and global website traffic data, to enrich the analysis.
-
-## Project Structure
-
-The project is organized with a modular and scalable structure, making it easy to extend and maintain. The main components are:
-
-```
-news-data-analysis/
-├── data/
-├── notebooks/
-├── src/
-│   ├── config.py
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   ├── models.py
-│   └── utils.py
-├── tests/
-├── requirements.txt
-├── setup.py
-└── README.md
-```
+## Objectives
+- Design an intuitive and visually appealing dashboard using design thinking principles.
+- Develop a Streamlit-based application to integrate the results from previous tasks.
+- Incorporate React components within the Streamlit framework to enhance the user experience.
+- Demonstrate the full-stack capabilities of the news data analysis pipeline.
 
 ## Key Features
+- **Comprehensive Overview**: Provide a high-level summary of the news landscape, including top sources, trending topics, and sentiment analysis.
+- **Detailed Insights**: Enable users to dive deeper into specific aspects of the news data, such as time-series trends, topic clusters, and website performance metrics.
+- **Interactive Visualizations**: Feature a variety of interactive charts, graphs, and data exploration tools to facilitate a seamless user experience.
+- **Customizable Filters**: Allow users to filter and segment the data based on various criteria, such as news source, location, and time period.
+- **React-powered Components**: Incorporate selected components built using React to provide a modern and responsive user interface.
 
-### MLOps Components
+## Design Process
+1. **Wireframing and Mockups**:
+  - Create low-fidelity wireframes and high-fidelity mockups using tools like Figma or Sketch.
+  - Define the layout, user flow, and visual elements of the dashboard.
 
-The project incorporates several MLOps components to ensure the scalability, maintainability, and reliability of the news data analysis pipeline. These include a feature store, model versioning, and model monitoring.
+2. **Iterative Design**:
+  - Engage in an iterative design process, soliciting feedback from stakeholders and end-users.
+  - Refine the dashboard's design and functionality based on the feedback.
 
-### Analysis Pipeline Design
+3. **Design System**:
+  - Establish a consistent design system, including color palettes, typography, and UI components.
+  - Ensure a cohesive and visually appealing user experience.
 
-The project follows the CRISP-DM (Cross-Industry Standard Process for Data Mining) methodology to design an end-to-end analysis pipeline, covering data ingestion, preprocessing, feature engineering, modeling, deployment, and monitoring.
+## Implementation
+1. **Streamlit Application**:
+  - Use the Streamlit library to build the backend of the dashboard.
+  - Leverage Streamlit's data visualization capabilities and integration with Python.
 
-### Time Series Analysis
+2. **React Components**:
+  - Develop selected components of the dashboard using React.
+  - Seamlessly integrate the React components into the Streamlit application.
 
-The project performs in-depth time-series analysis on the news data, including trend and seasonality identification, anomaly detection, and forecasting of key metrics.
+3. **Data Integrations**:
+  - Connect the dashboard to the data sources and machine learning models developed in previous tasks.
+  - Ensure a smooth flow of information from the backend to the frontend.
 
-### News Headline Classification
+4. **Responsive Design**:
+  - Design the dashboard with a mobile-first approach.
+  - Ensure a consistent and optimized user experience across devices.
 
-A machine learning model is developed to classify news headlines into predefined categories, enabling the identification of the main topics and focus areas covered by different news sources.
+5. **Deployment**:
+  - Deploy the final dashboard to a hosting platform, such as Heroku or AWS.
+  - Make the dashboard accessible to stakeholders and end-users.
 
-### Topic Modelling and Sentiment Analysis
+## Deliverables
+- A visually stunning and interactive dashboard that showcases the insights and findings from the news data analysis.
+- A well-documented Streamlit application, including the integration of React components and the overall architecture.
+- A comprehensive user guide that explains the dashboard's features, functionality, and how to interact with the various components.
 
-Topic modelling and sentiment analysis techniques are applied to the news content to extract deeper insights, understand thematic trends, and monitor the emotional tone of news coverage.
-
-### Predictive Analysis and Modelling
-
-Predictive models are built to forecast relevant metrics, such as the global ranking of news websites, sentiment of news articles, and traffic trends, providing forward-looking insights to support decision-making.
-
-### Network Analysis
-
-Network analysis is conducted to unveil the relationships and connections within the news ecosystem, including news source interactions, geographic coverage patterns, and topic interdependencies.
-
-## Installation and Usage
-
-To use the News Data Analysis Pipeline, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/your-username/news-data-analysis.git`
-2. Install the required dependencies: `pip install -r requirements.txt`
-3. Prepare the data by downloading the necessary files and updating the file paths in the `config.py` module.
-4. Run the Jupyter notebooks in the `notebooks/` directory to explore the data and execute the various analysis tasks.
-5. Customize and extend the Python modules in the `src/` directory to add new functionality or refine the existing components.
-6. Integrate the trained models and analysis components into your production environment, leveraging the MLOps features described earlier.
-
-For more detailed instructions and usage examples, please refer to the README.md file in the project repository.
-
-## Contributing
-
-We welcome contributions to the News Data Analysis Pipeline project. If you would like to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b feature/my-feature`.
-3. Make your changes and commit them: `git commit -am 'Add some feature'`.
-4. Push the branch to your fork: `git push origin feature/my-feature`.
-5. Submit a pull request to the main repository.
-
-Please ensure that your contributions adhere to the project's coding standards and include appropriate tests and documentation.
-
-## References
-
-- [CRISP-DM: A Standard Process Model for Data Mining](https://www.datascience-pm.com/crisp-dm-2/)
-- [Gensim Topic Modeling - A Guide to Building Best LDA models](https://www.machinelearningplus.com/topic-modeling-gensim-python/)
-- [MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
-- [A Gentle Introduction to Unit Testing in Python](https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/)
-- [Network Analysis of News Articles](https://github.com/parkervg/news-article-clustering)
+## Next Steps
+After completing this task, you will proceed to Task 5, which focuses on the deployment of the entire news data analysis pipeline, including the dashboard, to a production environment.
